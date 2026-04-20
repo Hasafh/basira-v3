@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx vite:*)",
+      "Bash(sed -i \"s|import { useAnalysis } from ''../../../context/AnalysisContext'';|import { useAnalysis } from ''../../../hooks/useAnalysis'';|g\" /c/Users/alnum/Desktop/basira-v4/basira-v4/src/pages/analyzer/tabs/DryPowderTab.tsx /c/Users/alnum/Desktop/basira-v4/basira-v4/src/pages/analyzer/tabs/ResultsTab.tsx /c/Users/alnum/Desktop/basira-v4/basira-v4/src/pages/analyzer/tabs/RlvTab.tsx /c/Users/alnum/Desktop/basira-v4/basira-v4/src/pages/reports/templates/MainReport.tsx)",
+      "Bash(__NEW_LINE_bc97226b10937331__ sed:*)",
+      "Bash(head -10 grep -rn \"marketAPI\\\\|market\" /c/Users/alnum/Desktop/basira-v4/basira-v4/src/api --include=\"*.ts\")",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(sed -i 's|\\\\.rpt-card { box-shadow: none !important; }|.rpt-card { box-shadow: none !important; }\\\\n  body * { visibility: hidden; }\\\\n  .report-content, .report-content * { visibility: visible; }\\\\n  .report-content { position: absolute; left: 0; top: 0; width: 100%; }|g' \"$f\")",
+      "Bash(done)",
+      "Bash(cd:*)"
+    ]
+  }
+}

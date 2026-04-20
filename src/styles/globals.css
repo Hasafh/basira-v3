@@ -1,0 +1,25 @@
+/* ── Global CSS variables and base styles ── */
+/* Main styles are in src/index.css — this file holds design tokens */
+
+:root {
+  --color-brand:        #B8924A;
+  --color-brand-light:  #C9A05E;
+  --color-dark:         #0A0C12;
+  --color-surface:      #F4F3EF;
+  --color-white:        #FAFAF8;
+  --color-success:      #16a34a;
+  --color-danger:       #dc2626;
+  --color-warning:      #d97706;
+  --color-info:         #2563eb;
+
+  --font-arabic:   'Tajawal', sans-serif;
+  --font-mono:     'IBM Plex Mono', monospace;
+
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  20px;
+
+  --border-light: rgba(10, 12, 18, 0.07);
+  --border-brand: rgba(184, 146, 74, 0.25);
+}

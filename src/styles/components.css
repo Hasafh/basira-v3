@@ -1,0 +1,26 @@
+/* ── Shared component styles ── */
+
+/* Number display (monospace for alignment) */
+.num { font-family: var(--font-mono, 'IBM Plex Mono', monospace); }
+
+/* Fade-up entrance animation */
+@keyframes fadeup {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeup { animation: fadeup 0.2s ease-out both; }
+
+/* Section card */
+.section-card {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+/* KPI card */
+.kpi-card {
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  text-align: center;
+}

@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #F4F3EF;
+  color: #0A0C12;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D4B47A; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #B8924A; }
+
+/* ── Form elements ── */
+input, select, textarea {
+  font-family: 'Tajawal', sans-serif;
+}
+input[type="number"] {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* ── Gold focus ring ── */
+.focus-gold:focus {
+  outline: none;
+  border-color: #B8924A !important;
+  box-shadow: 0 0 0 3px rgba(184,146,74,0.18);
+}
+
+/* ── Input base ── */
+.input {
+  @apply w-full border border-ink-100 rounded-xl px-3 py-2.5 text-sm
+         bg-white transition-all focus-gold;
+}
+
+/* ── Utility: number cells ── */
+.num { font-family: 'IBM Plex Mono', monospace; }
+
+/* ── Sidebar active glow ── */
+.nav-active {
+  background: rgba(184,146,74,0.12);
+  color: #B8924A;
+}
+
+/* ── Animate fade-up ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeup { animation: fadeUp 0.25s ease forwards; }
+
+/* ── Table ── */
+.tbl th {
+  @apply text-right text-xs font-medium text-ink-300 py-2.5 px-3 bg-paper-dark;
+}
+.tbl td {
+  @apply text-right text-sm py-2.5 px-3 border-b border-ink-50;
+}
+.tbl tr:hover td { background: rgba(184,146,74,0.04); }
